@@ -50,8 +50,8 @@
 }
 
 - (CGFloat)flickVelocity {
-   return 0.3;
-//    return 0.8;
+//   return 0.3;
+    return 0.01;
 }
 
 @end
