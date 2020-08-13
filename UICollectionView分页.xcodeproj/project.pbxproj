@@ -16,6 +16,8 @@
 		1874EE3F24E5494B0067C552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE3E24E5494B0067C552 /* main.m */; };
 		1874EE4924E5494B0067C552 /* UICollectionView__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE4824E5494B0067C552 /* UICollectionView__Tests.m */; };
 		1874EE5424E5494B0067C552 /* UICollectionView__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE5324E5494B0067C552 /* UICollectionView__UITests.m */; };
+		1874EE6324E549840067C552 /* PagingEnableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE6224E549840067C552 /* PagingEnableLayout.m */; };
+		1874EE6624E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE6524E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		1874EE4F24E5494B0067C552 /* UICollectionView分页UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UICollectionView分页UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1874EE5324E5494B0067C552 /* UICollectionView__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionView__UITests.m; sourceTree = "<group>"; };
 		1874EE5524E5494B0067C552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1874EE6124E549840067C552 /* PagingEnableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingEnableLayout.h; sourceTree = "<group>"; };
+		1874EE6224E549840067C552 /* PagingEnableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingEnableLayout.m; sourceTree = "<group>"; };
+		1874EE6424E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSelectBabyAuntCollectionViewCell.h; sourceTree = "<group>"; };
+		1874EE6524E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSelectBabyAuntCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 				1874EE2D24E549490067C552 /* AppDelegate.m */,
 				1874EE2F24E549490067C552 /* SceneDelegate.h */,
 				1874EE3024E549490067C552 /* SceneDelegate.m */,
+				1874EE6424E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.h */,
+				1874EE6524E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m */,
+				1874EE6124E549840067C552 /* PagingEnableLayout.h */,
+				1874EE6224E549840067C552 /* PagingEnableLayout.m */,
 				1874EE3224E549490067C552 /* ViewController.h */,
 				1874EE3324E549490067C552 /* ViewController.m */,
 				1874EE3524E549490067C552 /* Main.storyboard */,
@@ -267,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1874EE6324E549840067C552 /* PagingEnableLayout.m in Sources */,
 				1874EE3424E549490067C552 /* ViewController.m in Sources */,
+				1874EE6624E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m in Sources */,
 				1874EE2E24E549490067C552 /* AppDelegate.m in Sources */,
 				1874EE3F24E5494B0067C552 /* main.m in Sources */,
 				1874EE3124E549490067C552 /* SceneDelegate.m in Sources */,
@@ -442,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "UICollectionView分页/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "UICollectionView分页/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
