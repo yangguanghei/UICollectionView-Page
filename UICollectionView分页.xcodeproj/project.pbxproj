@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082278FE4A8ACB159C393EDB /* libPods-UICollectionView分页.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3513E83F6C079AC36B1CC3 /* libPods-UICollectionView分页.a */; };
 		1874EE2E24E549490067C552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE2D24E549490067C552 /* AppDelegate.m */; };
 		1874EE3124E549490067C552 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE3024E549490067C552 /* SceneDelegate.m */; };
 		1874EE3424E549490067C552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874EE3324E549490067C552 /* ViewController.m */; };
@@ -60,6 +61,9 @@
 		1874EE6224E549840067C552 /* PagingEnableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingEnableLayout.m; sourceTree = "<group>"; };
 		1874EE6424E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSelectBabyAuntCollectionViewCell.h; sourceTree = "<group>"; };
 		1874EE6524E549C40067C552 /* MWSelectBabyAuntCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSelectBabyAuntCollectionViewCell.m; sourceTree = "<group>"; };
+		87641B4B42C7140B7ADB8B14 /* Pods-UICollectionView分页.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView分页.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView分页/Pods-UICollectionView分页.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3513E83F6C079AC36B1CC3 /* libPods-UICollectionView分页.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionView分页.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24DDF561B978B048928A480 /* Pods-UICollectionView分页.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView分页.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView分页/Pods-UICollectionView分页.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082278FE4A8ACB159C393EDB /* libPods-UICollectionView分页.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,8 @@
 				1874EE4724E5494B0067C552 /* UICollectionView分页Tests */,
 				1874EE5224E5494B0067C552 /* UICollectionView分页UITests */,
 				1874EE2A24E549490067C552 /* Products */,
+				4952BD92955286769A28FA1F /* Pods */,
+				EF9BF4AF3DA92995D6DF2182 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +154,24 @@
 			path = "UICollectionView分页UITests";
 			sourceTree = "<group>";
 		};
+		4952BD92955286769A28FA1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87641B4B42C7140B7ADB8B14 /* Pods-UICollectionView分页.debug.xcconfig */,
+				A24DDF561B978B048928A480 /* Pods-UICollectionView分页.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF9BF4AF3DA92995D6DF2182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C3513E83F6C079AC36B1CC3 /* libPods-UICollectionView分页.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1874EE5824E5494B0067C552 /* Build configuration list for PBXNativeTarget "UICollectionView分页" */;
 			buildPhases = (
+				D203FA7DB84D3BBB2D3AA4C5 /* [CP] Check Pods Manifest.lock */,
 				1874EE2524E549490067C552 /* Sources */,
 				1874EE2624E549490067C552 /* Frameworks */,
 				1874EE2724E549490067C552 /* Resources */,
+				D1D8F4E64CE3B4BEB1BBB7EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +298,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1D8F4E64CE3B4BEB1BBB7EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView分页/Pods-UICollectionView分页-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView分页/Pods-UICollectionView分页-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UICollectionView分页/Pods-UICollectionView分页-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D203FA7DB84D3BBB2D3AA4C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UICollectionView分页-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1874EE2524E549490067C552 /* Sources */ = {
@@ -449,6 +518,7 @@
 		};
 		1874EE5924E5494B0067C552 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87641B4B42C7140B7ADB8B14 /* Pods-UICollectionView分页.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +537,7 @@
 		};
 		1874EE5A24E5494B0067C552 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24DDF561B978B048928A480 /* Pods-UICollectionView分页.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

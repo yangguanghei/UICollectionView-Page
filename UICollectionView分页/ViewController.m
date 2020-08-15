@@ -10,6 +10,7 @@
 
 #import "PagingEnableLayout.h"
 #import "MWSelectBabyAuntCollectionViewCell.h"
+#import <QMUIKit.h>
 
 
 #define COLOR_WITH_RGB(R,G,B,A) [UIColor colorWithRed:R green:G blue:B alpha:A]
@@ -26,6 +27,7 @@ static const CGFloat itemH = 270;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.collectionView];
 }
 
@@ -42,21 +44,20 @@ static const CGFloat itemH = 270;
 - (UICollectionView *)collectionView{
   if (_collectionView == nil) {
 //    UICollectionViewFlowLayout * layout = [UICollectionViewFlowLayout new];
-    PagingEnableLayout * layout = [PagingEnableLayout new];
+      QMUICollectionViewPagingLayout * layout = [QMUICollectionViewPagingLayout new];
+//    PagingEnableLayout * layout = [PagingEnableLayout new];
     layout.minimumLineSpacing = 0.0;
     layout.minimumInteritemSpacing = 0.0;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
       layout.itemSize = CGSizeMake(self.view.frame.size.width - 40,itemH / 3);
-//    layout.itemSize = CGSizeMake(SCREEN_WIDTH,itemH / 3);
-      _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, itemH) collectionViewLayout:layout];
+      _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, itemH) collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.showsVerticalScrollIndicator = NO;
     _collectionView.showsHorizontalScrollIndicator = NO;
-//    _collectionView.pagingEnabled = YES;
+//      _collectionView.pagingEnabled = YES;
     [_collectionView registerClass:[MWSelectBabyAuntCollectionViewCell class] forCellWithReuseIdentifier:@"MWSelectBabyAuntCollectionViewCell"];
     _collectionView.backgroundColor = [UIColor whiteColor];
-      
       // UIScrollViewDecelerationRateFast
       // UIScrollViewDecelerationRateNormal
       _collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
